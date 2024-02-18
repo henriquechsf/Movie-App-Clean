@@ -1,4 +1,4 @@
-package br.com.movieapp.presentation.navigation
+package br.com.movieapp.core.presentation.navigation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
