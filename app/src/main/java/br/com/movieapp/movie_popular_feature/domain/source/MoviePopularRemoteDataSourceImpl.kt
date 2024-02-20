@@ -3,8 +3,9 @@ package br.com.movieapp.movie_popular_feature.domain.source
 import br.com.movieapp.core.data.remote.MovieService
 import br.com.movieapp.core.data.remote.response.MovieResponse
 import br.com.movieapp.core.paging.MoviePagingSource
+import javax.inject.Inject
 
-class MoviePopularRemoteDataSourceImpl constructor(
+class MoviePopularRemoteDataSourceImpl @Inject constructor(
     private val service: MovieService
 ) : MoviePopularRemoteDataSource {
 
