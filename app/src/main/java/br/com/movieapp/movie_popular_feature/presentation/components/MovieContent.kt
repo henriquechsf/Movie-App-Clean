@@ -14,6 +14,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.paging.compose.LazyPagingItems
 import br.com.movieapp.core.domain.model.Movie
+import br.com.movieapp.core.util.UtilFunctions
+import br.com.movieapp.core.util.toPostUrl
 
 @Composable
 fun MovieContent(
@@ -33,6 +35,7 @@ fun MovieContent(
             items(pagingMovies.itemCount) { index ->
                 val movie = pagingMovies[index]
                 movie?.let {
+                    UtilFunctions.logInfo("MOVIE_RESPONSE", it.imageUrl)
                     MovieItem(
                         voteAverage = it.voteAverage,
                         imageUrl = it.imageUrl,
