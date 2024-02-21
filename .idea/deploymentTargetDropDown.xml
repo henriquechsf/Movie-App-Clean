@@ -5,6 +5,9 @@
       <entry key="BottomNavigationPreview">
         <State />
       </entry>
+      <entry key="MovieItemPreview">
+        <State />
+      </entry>
       <entry key="app">
         <State>
           <targetSelectedWithDropDown>
@@ -13,12 +16,12 @@
               <deviceKey>
                 <Key>
                   <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="$USER_HOME$/.android/avd/Pixel_4_API_34.avd" />
+                  <value value="$USER_HOME$/.android/avd/Pixel_3_API_34.avd" />
                 </Key>
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-02-18T02:22:41.577734162Z" />
+          <timeTargetWasSelectedWithDropDown value="2024-02-21T00:51:17.010655924Z" />
         </State>
       </entry>
     </value>
