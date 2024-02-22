@@ -10,7 +10,7 @@ class MoviePopularRemoteDataSourceImpl @Inject constructor(
 ) : MoviePopularRemoteDataSource {
 
     override fun getPopularMoviesPagingSource(): MoviePagingSource {
-        return MoviePagingSource(this)
+        return MoviePagingSource(remoteDataSource = this)
     }
 
     override suspend fun getPopularMovies(page: Int): MovieResponse {
