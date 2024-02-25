@@ -1,6 +1,5 @@
 package br.com.movieapp.movie_detail_feature.presentation.components
 
-import android.graphics.Paint.Align
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
@@ -15,7 +14,7 @@ import androidx.compose.ui.unit.dp
 import br.com.movieapp.ui.theme.white
 
 @Composable
-fun GenreTag(
+fun MovieDetailGenreTag(
     genre: String
 ) {
     Box(
@@ -35,5 +34,5 @@ fun GenreTag(
 @Preview
 @Composable
 fun GenreTagPreview() {
-    GenreTag(genre = "Aventura")
+    MovieDetailGenreTag(genre = "Aventura")
 }
