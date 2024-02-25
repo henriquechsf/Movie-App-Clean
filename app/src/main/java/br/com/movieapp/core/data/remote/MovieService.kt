@@ -19,5 +19,5 @@ interface MovieService {
     suspend fun getMovie(@Path("movie_id") movieId: Int): MovieDetailResponse
 
     @GET("movie/{movie_id}/similar")
-    suspend fun getMoviesSimilar(@Path("id") id: Int, @Query("page") page: Int): MovieResponse
+    suspend fun getMoviesSimilar(@Path("movie_id") id: Int, @Query("page") page: Int): MovieResponse
 }

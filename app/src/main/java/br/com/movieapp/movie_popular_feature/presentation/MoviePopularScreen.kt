@@ -38,6 +38,7 @@ fun MoviePopularScreen(
                 paddingValues = paddingValues,
                 onClick = { movieId ->
                     UtilFunctions.logInfo("MOVIE_ID", movieId.toString())
+                    navigateToDetailMovie(movieId)
                 }
             )
         }
