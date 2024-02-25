@@ -8,6 +8,6 @@ data class MovieDetails(
     val backdropPathUrl: String?,
     val releaseDate: String?,
     val voteAverage: Double,
-    val duration: Int = 0,
+    val duration: Long = 0,
     val voteCount: Int = 0
 )
