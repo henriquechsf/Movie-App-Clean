@@ -76,4 +76,19 @@ class MovieDaoTest {
         assertThat(movies[2].movieId).isEqualTo(3)
         assertThat(movies[3].movieId).isEqualTo(4)
     }
+
+    @Test
+    fun test_getMovie_should_return_correct_movie_by_id() = runTest {
+        //Given
+        val movieEntity = MovieEntity(movieId = 1, title = "Filme 1", imageUrl = "url1")
+        movieDao.insertMovie(movieEntity)
+        val movies = movieDao.getMovies().first()
+        val movieClick = movies[0]
+
+        //When
+        val movieId = movieDao.getMovie(movieClick.movieId)
+
+        //Then
+        assertThat(movieId?.title).isEqualTo(movieClick.title)
+    }
 }

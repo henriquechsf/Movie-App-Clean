@@ -2,9 +2,6 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="BottomNavigationPreview">
-        <State />
-      </entry>
       <entry key="MovieDaoTest">
         <State />
       </entry>
@@ -31,6 +28,9 @@
         <State />
       </entry>
       <entry key="getMovies_orderedById()">
+        <State />
+      </entry>
+      <entry key="test_getMovie_should_return_correct_movie_by_id()">
         <State />
       </entry>
     </value>
