@@ -2,10 +2,7 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="BottomNavigationPreview">
-        <State />
-      </entry>
-      <entry key="MovieItemPreview">
+      <entry key="MovieDaoTest">
         <State />
       </entry>
       <entry key="app">
@@ -23,6 +20,18 @@
           </targetSelectedWithDropDown>
           <timeTargetWasSelectedWithDropDown value="2024-02-21T00:51:17.010655924Z" />
         </State>
+      </entry>
+      <entry key="test_deleteMovie_should_delete_a_movie_successfully()">
+        <State />
+      </entry>
+      <entry key="test_isFavorite_should_return_favorite_movie_when_movie_is_marked_as_favorite()">
+        <State />
+      </entry>
+      <entry key="test_isFavorite_should_return_null_when_movie_is_not_marked_as_favorite()">
+        <State />
+      </entry>
+      <entry key="test_updateMovie_should_update_a_movie_successfully()">
+        <State />
       </entry>
     </value>
   </component>
