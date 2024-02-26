@@ -21,13 +21,13 @@
           <timeTargetWasSelectedWithDropDown value="2024-02-21T00:51:17.010655924Z" />
         </State>
       </entry>
-      <entry key="getMovies()">
-        <State />
-      </entry>
       <entry key="getMovies_orderedById()">
         <State />
       </entry>
       <entry key="test_getMovie_should_return_correct_movie_by_id()">
+        <State />
+      </entry>
+      <entry key="test_insertMovie_should_insert_a_movie_successfully()">
         <State />
       </entry>
       <entry key="test_insertMovies_should_insert_movies_successfully()">
