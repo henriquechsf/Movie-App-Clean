@@ -5,7 +5,6 @@ import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.res.stringResource
 import androidx.paging.compose.collectAsLazyPagingItems
 import br.com.movieapp.R
@@ -18,20 +17,10 @@ import br.com.movieapp.ui.theme.white
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun MovieDetailScreen(
-    id: Int?,
     uiState: MovieDetailState,
     onAddFavorite: (Movie) -> Unit,
-    checkedFavorite: (MovieDetailsEvent.CheckedFavorite) -> Unit,
-    getMovieDetail: (MovieDetailsEvent.GetMovieDetail) -> Unit
 ) {
     val pagingMoviesSimilar = uiState.results.collectAsLazyPagingItems()
-
-    LaunchedEffect(key1 = true) {
-        if (id != null) {
-            getMovieDetail(MovieDetailsEvent.GetMovieDetail(id))
-            checkedFavorite(MovieDetailsEvent.CheckedFavorite(id))
-        }
-    }
 
     Scaffold(
         topBar = {
