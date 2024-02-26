@@ -5,9 +5,6 @@
       <entry key="MovieDaoTest">
         <State />
       </entry>
-      <entry key="MovieItemPreview">
-        <State />
-      </entry>
       <entry key="app">
         <State>
           <targetSelectedWithDropDown>
@@ -31,6 +28,9 @@
         <State />
       </entry>
       <entry key="test_getMovie_should_return_correct_movie_by_id()">
+        <State />
+      </entry>
+      <entry key="test_insertMovies_should_insert_movies_successfully()">
         <State />
       </entry>
     </value>
