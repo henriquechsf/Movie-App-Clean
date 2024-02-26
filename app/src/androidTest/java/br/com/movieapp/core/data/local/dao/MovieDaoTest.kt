@@ -31,7 +31,7 @@ class MovieDaoTest {
     @Inject
     @Named("test_db")
     lateinit var database: MovieDatabase
-    private  lateinit var movieDao: MovieDao
+    private lateinit var movieDao: MovieDao
 
     @Before
     fun setup() {
@@ -148,5 +148,35 @@ class MovieDaoTest {
 
         //Then
         assertThat(result).isNull()
+    }
+
+    @Test
+    fun test_updateMovie_should_update_a_movie_successfully() = runTest {
+        //Given
+        val movieEntity = MovieEntity(movieId = 1, title = "Filme 1", imageUrl = "url1")
+        movieDao.insertMovie(movieEntity)
+        val allMovies = movieDao.getMovies().first()
+        val updateMovie = allMovies[0].copy(title = "Filme atualizado")
+
+        //When
+        movieDao.insertMovie(updateMovie)
+
+        //Then
+        val movies = movieDao.getMovies().first()
+        assertThat(movies[0].title).contains(updateMovie.title)
+    }
+
+    @Test
+    fun test_deleteMovie_should_delete_a_movie_successfully() = runTest {
+        //Given
+        val movieEntity = MovieEntity(movieId = 1, title = "Filme 1", imageUrl = "url1")
+        movieDao.insertMovie(movieEntity)
+
+        //When
+        movieDao.deleteMovie(movieEntity)
+
+        //Then
+        val movies = movieDao.getMovies().first()
+        assertThat(movies).isEmpty()
     }
 }

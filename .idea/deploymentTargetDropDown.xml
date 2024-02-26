@@ -2,6 +2,9 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="MovieDaoTest">
+        <State />
+      </entry>
       <entry key="app">
         <State>
           <targetSelectedWithDropDown>
@@ -18,19 +21,16 @@
           <timeTargetWasSelectedWithDropDown value="2024-02-21T00:51:17.010655924Z" />
         </State>
       </entry>
-      <entry key="test_getMovie_should_return_correct_movie_by_id()">
-        <State />
-      </entry>
-      <entry key="test_insertMovie_should_insert_a_movie_successfully()">
-        <State />
-      </entry>
-      <entry key="test_insertMovies_should_insert_movies_successfully()">
+      <entry key="test_deleteMovie_should_delete_a_movie_successfully()">
         <State />
       </entry>
       <entry key="test_isFavorite_should_return_favorite_movie_when_movie_is_marked_as_favorite()">
         <State />
       </entry>
       <entry key="test_isFavorite_should_return_null_when_movie_is_not_marked_as_favorite()">
+        <State />
+      </entry>
+      <entry key="test_updateMovie_should_update_a_movie_successfully()">
         <State />
       </entry>
     </value>
