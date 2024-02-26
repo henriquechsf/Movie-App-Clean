@@ -5,6 +5,9 @@
       <entry key="BottomNavigationPreview">
         <State />
       </entry>
+      <entry key="MovieDaoTest">
+        <State />
+      </entry>
       <entry key="MovieItemPreview">
         <State />
       </entry>
@@ -25,6 +28,9 @@
         </State>
       </entry>
       <entry key="getMovies()">
+        <State />
+      </entry>
+      <entry key="getMovies_orderedById()">
         <State />
       </entry>
     </value>
